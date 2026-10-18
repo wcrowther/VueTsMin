@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/1.0.6887863">
+  <PropertyGroup>
+    <!-- Maps to the "dev" script in package.json (vite) -->
+    <StartupCommand>npm run dev</StartupCommand>
+    <!-- Build/type-check is handled by `npm run build`; no separate production build step is needed here -->
+    <ShouldRunBuildScript>false</ShouldRunBuildScript>
+    <BuildOutputFolder>$(MSBuildProjectDirectory)\dist</BuildOutputFolder>
+    <JavaScriptTestRoot>src\</JavaScriptTestRoot>
+    <JavaScriptTestFramework>Vitest</JavaScriptTestFramework>
+    <TestCommand>npm run test:unit</TestCommand>
+  </PropertyGroup>
+</Project>
