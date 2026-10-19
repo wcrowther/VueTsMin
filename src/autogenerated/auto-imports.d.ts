@@ -60,10 +60,10 @@ declare global {
   const toValue: typeof import('vue').toValue
   const triggerRef: typeof import('vue').triggerRef
   const unref: typeof import('vue').unref
-  const useAppStore: typeof import('./stores/AppStore').useAppStore
+  const useAppStore: typeof import('../stores/AppStore').useAppStore
   const useAttrs: typeof import('vue').useAttrs
   const useClipboard: typeof import('@vueuse/core').useClipboard
-  const useCounterStore: typeof import('./stores/counter').useCounterStore
+  const useCounterStore: typeof import('../stores/counter').useCounterStore
   const useCssModule: typeof import('vue').useCssModule
   const useCssVars: typeof import('vue').useCssVars
   const useDebounceFn: typeof import('@vueuse/core').useDebounceFn
@@ -145,10 +145,10 @@ declare module 'vue' {
     readonly toValue: UnwrapRef<typeof import('vue')['toValue']>
     readonly triggerRef: UnwrapRef<typeof import('vue')['triggerRef']>
     readonly unref: UnwrapRef<typeof import('vue')['unref']>
-    readonly useAppStore: UnwrapRef<typeof import('./stores/AppStore')['useAppStore']>
+    readonly useAppStore: UnwrapRef<typeof import('../stores/AppStore')['useAppStore']>
     readonly useAttrs: UnwrapRef<typeof import('vue')['useAttrs']>
     readonly useClipboard: UnwrapRef<typeof import('@vueuse/core')['useClipboard']>
-    readonly useCounterStore: UnwrapRef<typeof import('./stores/counter')['useCounterStore']>
+    readonly useCounterStore: UnwrapRef<typeof import('../stores/counter')['useCounterStore']>
     readonly useCssModule: UnwrapRef<typeof import('vue')['useCssModule']>
     readonly useCssVars: UnwrapRef<typeof import('vue')['useCssVars']>
     readonly useDebounceFn: UnwrapRef<typeof import('@vueuse/core')['useDebounceFn']>
