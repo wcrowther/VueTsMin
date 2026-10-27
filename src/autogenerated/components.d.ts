@@ -12,17 +12,13 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     AboutView: typeof import('./../pageviews/AboutView.vue')['default']
-    BrandBar: typeof import('./../components/BrandBar.vue')['default']
-    FooterBox: typeof import('./../components/FooterBox.vue')['default']
-    HelloWorld: typeof import('./../components/HelloWorld.vue')['default']
-    HomeView: typeof import('./../pageviews/HomeView.vue')['default']
-    IconCommunity: typeof import('./../components/icons/IconCommunity.vue')['default']
-    IconDocumentation: typeof import('./../components/icons/IconDocumentation.vue')['default']
-    IconEcosystem: typeof import('./../components/icons/IconEcosystem.vue')['default']
-    IconSupport: typeof import('./../components/icons/IconSupport.vue')['default']
-    IconTooling: typeof import('./../components/icons/IconTooling.vue')['default']
+    BrandBar: typeof import('./../pageviews/layout/BrandBar.vue')['default']
+    FooterBox: typeof import('./../pageviews/layout/FooterBox.vue')['default']
+    HomeView: typeof import('./../pageviews/home/HomeView.vue')['default']
+    IconSymbol: typeof import('./../components/misc/IconSymbol.vue')['default']
     MainLayout: typeof import('./../pagelayouts/MainLayout.vue')['default']
-    MainNavbar: typeof import('./../components/MainNavbar.vue')['default']
+    MainNavbar: typeof import('./../pageviews/layout/MainNavbar.vue')['default']
+    ModalControl: typeof import('./../components/controls/ModalControl.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }

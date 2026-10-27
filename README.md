@@ -23,6 +23,11 @@ TypeScript cannot handle type information for `.vue` imports by default, so we r
 
 See [Vite Configuration Reference](https://vite.dev/config/).
 
+## Styling with Tailwind CSS
+
+Tailwind CSS 4 is integrated through the Vite plugin. Add utility classes directly
+to Vue templates; Tailwind is imported in `src/styles/main.css`.
+
 ## Project Setup
 
 ```sh

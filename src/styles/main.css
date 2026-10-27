@@ -1,8 +1,6 @@
-@import './base.css';
+@import 'tailwindcss';
 
-#app {
-	max-width: 1280px;
-	margin: 0;
-	padding: 0;
-	font-weight: normal;
-}
+#app { @apply m-0 p-0 font-normal }
+
+.main-width { @apply min-w-95 max-w-307.5 md:mx-5 xl:mx-auto }
+
