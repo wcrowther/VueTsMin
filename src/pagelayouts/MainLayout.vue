@@ -13,7 +13,7 @@
 
 		<MainNavbar />
 
-		<div class="border border-gray-300 p-3 min-h-125">
+		<div class="border border-gray-300 border-t-0 p-7 min-h-125">
 			<slot></slot>
 		</div>
 

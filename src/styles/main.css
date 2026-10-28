@@ -1,6 +1,70 @@
 @import 'tailwindcss';
 
+@theme {
+
+	--primary-back: var(--color-green-200);
+	--primary-back-dark: var(--color-green-600);
+
+	/* DEFAULT shade (e.g. `bg-slate`, `text-red`) */
+	--color-slate: var(--color-slate-500);
+	--color-gray: var(--color-gray-500);
+	--color-zinc: var(--color-zinc-500);
+	--color-neutral: var(--color-neutral-500);
+	--color-stone: var(--color-stone-500);
+	--color-red: var(--color-red-500);
+	--color-orange: var(--color-orange-500);
+	--color-amber: var(--color-amber-500);
+	--color-yellow: var(--color-yellow-500);
+	--color-lime: var(--color-lime-500);
+	--color-green: var(--color-green-500);
+	--color-emerald: var(--color-emerald-500);
+	--color-teal: var(--color-teal-500);
+	--color-cyan: var(--color-cyan-500);
+	--color-sky: var(--color-sky-500);
+	--color-blue: var(--color-blue-500);
+	--color-indigo: var(--color-indigo-500);
+	--color-violet: var(--color-violet-500);
+	--color-purple: var(--color-purple-500);
+	--color-fuchsia: var(--color-fuchsia-500);
+	--color-pink: var(--color-pink-500);
+	--color-rose: var(--color-rose-500);
+}
+
 #app { @apply m-0 p-0 font-normal }
 
 .main-width { @apply min-w-95 max-w-307.5 md:mx-5 xl:mx-auto }
+
+@layer components {
+
+	/* Buttons */
+
+	.btn-primary {
+		@apply bg-(--primary-back) text-green-800 select-none text-sm outline-[#99b3cf] border border-transparent
+			font-sans tracking-wide font-bold rounded-md px-3 pt-1 pb-0.75 w-fit transition-colors duration-100
+			hover:bg-white hover:border-[#81caff];
+	}
+	.btn-secondary {
+		@apply bg-transparent border border-[#121639] text-[#121639] opacity-70 text-sm select-none
+			font-sans tracking-wide font-bold rounded-md px-3 pt-1 pb-0.75 w-fit hover:opacity-100
+			hover:bg-gray-200
+	}
+	.btn-delete, .btn-disable, .btn-cancel, .btn-primary:disabled {
+		@apply bg-[#b7b7b7] text-[#595A50] select-none text-sm border border-transparent
+			tracking-wide font-bold rounded-md px-3 pt-1 pb-0.75 w-fit transition-colors duration-100
+			hover:bg-[#dfded6] hover:border-[#908e72]
+	}
+
+	/* Nav tabs */
+
+	.nav-tab {
+		@apply text-green-700 bg-(--primary-back) font-semibold tracking-wide font-sans rounded-full
+			px-4 pt-px h-7 text-sm flex items-center mb-1.5 transition-colors duration-150
+			hover:bg-transparent hover:text-green-600
+	}
+	.active-tab {
+		@apply text-green-800 bg-[linear-gradient(220deg,#dadada_0%,white_20%)] rounded-t-md rounded-b-none
+			opacity-100 m-0 h-9 hover:text-black hover:opacity-100
+	}
+
+}
 

@@ -12,6 +12,7 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     AboutView: typeof import('./../pageviews/AboutView.vue')['default']
+    AdminView: typeof import('./../pageviews/AdminView.vue')['default']
     BrandBar: typeof import('./../pageviews/layout/BrandBar.vue')['default']
     FooterBox: typeof import('./../pageviews/layout/FooterBox.vue')['default']
     HomeView: typeof import('./../pageviews/home/HomeView.vue')['default']
