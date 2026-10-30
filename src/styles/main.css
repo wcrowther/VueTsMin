@@ -4,6 +4,8 @@
 
 	--primary-back: var(--color-green-200);
 	--primary-back-dark: var(--color-green-600);
+	/* --scrollbarBG:  var(--color-gray-100);
+	--thumbBG: var(--color-gray-300); */
 
 	/* DEFAULT shade (e.g. `bg-slate`, `text-red`) */
 	--color-slate: var(--color-slate-500);
@@ -36,6 +38,18 @@
 
 @layer components {
 
+	/* Custom page scrollbar  */
+
+	html {
+		overflow-y: scroll;
+		scrollbar-width: auto;
+		scrollbar-color: var(--scrollbarBG) var(--thumbBG);
+	}
+
+	html:hover {
+		scrollbar-color: var(--thumbBG, var(--color-gray-300)) var(--scrollbarBG, var(--color-gray-100));
+	}
+
 	/* Buttons */
 
 	.btn-primary {
@@ -54,17 +68,6 @@
 			hover:bg-[#dfded6] hover:border-[#908e72]
 	}
 
-	/* Nav tabs */
-
-	.nav-tab {
-		@apply text-green-700 bg-(--primary-back) font-semibold tracking-wide font-sans rounded-full
-			px-4 pt-px h-7 text-sm flex items-center mb-1.5 transition-colors duration-150
-			hover:bg-transparent hover:text-green-600
-	}
-	.active-tab {
-		@apply text-green-800 bg-[linear-gradient(220deg,#dadada_0%,white_20%)] rounded-t-md rounded-b-none
-			opacity-100 m-0 h-9 hover:text-black hover:opacity-100
-	}
 
 }
 

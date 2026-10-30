@@ -1,9 +1,10 @@
 
 
 export const useAppStore = defineStore('AppStore', () => {
+
 	// State ------------------------------------------------------------------
 
-	const fullWidth = useLocalStorage('fullWidth', false)
+	const fullWidth = useLocalStorage('fullWidth', true)
 
 	// Getters ------------------------------------------------------------------
 

@@ -1,5 +1,7 @@
 <template>
-	<div class="lg:min-h-screen lg:flex lg:items-center">
-		<h1>This is an about page</h1>
-	</div>
+	<h1 class="mt-5 text-2xl font-bold">About Page</h1>
+	<p class="mt-5">
+		Contact us for more information.
+		Lorem ipsum dolor sit amet lorem ipsum dolor sit amet.
+	</p>
 </template>

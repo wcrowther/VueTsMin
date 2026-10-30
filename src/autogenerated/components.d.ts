@@ -19,6 +19,7 @@ declare module 'vue' {
     IconSymbol: typeof import('./../components/misc/IconSymbol.vue')['default']
     MainLayout: typeof import('./../pagelayouts/MainLayout.vue')['default']
     MainNavbar: typeof import('./../pageviews/layout/MainNavbar.vue')['default']
+    MainTab: typeof import('./../components/layout/MainTab.vue')['default']
     ModalControl: typeof import('./../components/controls/ModalControl.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
