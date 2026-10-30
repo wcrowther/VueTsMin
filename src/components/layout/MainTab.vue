@@ -49,7 +49,7 @@
 
 	/* prettier-ignore */
 	.active-tab {
-		@apply text-green-800 rounded-t-md rounded-b-none opacity-100 m-0 h-9 hover:text-black hover:opacity-100
+		@apply text-green-800 rounded-t-md rounded-b-none opacity-100 m-0 h-9 hover:text-black hover:opacity-100;
 		background: linear-gradient(220deg, #dadada 0%, white 20%);
 	}
 
