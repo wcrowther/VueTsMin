@@ -43,11 +43,15 @@
 	@reference '../../styles/main.css';
 
 	.nav-tab {
-		@apply text-green-700 bg-(--primary-back) font-semibold tracking-wide font-sans rounded-full px-4 pt-px h-7 text-sm flex items-center mb-1.5 transition-colors duration-150 hover:bg-transparent hover:text-green-600;
+		@apply text-green-700 bg-(--primary-back) font-semibold tracking-wide font-sans rounded-full
+		px-4 pt-px h-7 text-sm flex items-center mb-1.5 transition-colors duration-150 hover:bg-transparent hover:text-green-600;
 	}
 
+	/* prettier-ignore */
 	.active-tab {
-		@apply text-green-800 rounded-t-md rounded-b-none opacity-100 m-0 h-9 hover:text-black hover:opacity-100;
+		@apply text-green-800 rounded-t-md rounded-b-none opacity-100 m-0 h-9 hover:text-black hover:opacity-100
 		background: linear-gradient(220deg, #dadada 0%, white 20%);
 	}
+
+	/* Alt for prettier formating issue --> bg-[linear-gradient(220deg,#dadada_0%,white_20%)]; */
 </style>
