@@ -1,5 +1,6 @@
 <Solution>
-  <Project Path="VueTypescriptMin.esproj">
+  <Project Path="VueTsMin.esproj">
     <Build />
+    <Deploy />
   </Project>
 </Solution>
